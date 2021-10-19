@@ -42,7 +42,7 @@ export default class App extends Component{
       <div className="auth-wrapper">
         <div className="auth-inner">
           <Switch>
-            <Route exact path="/" component={()=><Home user={this.state.user}/>} />
+            <Route exact path="/home" component={()=><Home user={this.state.user}/>} />
             <Route exact path="/login" component={() => <Login setUser={this.setUser}/>} />
             <Route exact path="/register" component={Register} />
 

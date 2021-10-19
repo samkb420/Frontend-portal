@@ -30,20 +30,22 @@ export default class Login extends Component {
     };
     render() {
         if(this.state.loggedIn){
-            return <Redirect to="/"/>;
+            return <Redirect to="/home"/>;
         }
         return (
             <div>
-                
-         
-                <form onSubmit={this.handleSubmit}>
+                <div className="container mt-4">
+                    <div className="row">
+                        <div className="col-md-5">
+                            <h1>Login And Get Started Using The Portal</h1>
+                        <form className="login" onSubmit={this.handleSubmit}>
                     <h3>Login</h3>
-                    <div className="for-group">
+                    <div className="form-group">
                         <label>Email</label>
                         <input type="email" className="form-control" placeholder="Email"
                         onChange={e => this.email = e.target.value}/>
                     </div>
-                    <div className="for-group">
+                    <div className="form-group">
                         <label>Password</label>
                         <input type="password" className="form-control" placeholder="Password"
                         onChange={e => this.password = e.target.value}/>
@@ -53,6 +55,19 @@ export default class Login extends Component {
                     <button className="btn mt-2 btn-success">Login</button>
                     </div>
                 </form>
+                        </div>
+                        <div className="col-md-7 mt-4 bg-image login">
+                           
+                            
+    
+                <img src="img/bg.png" alt="my hero"/>
+
+                            </div>
+                    </div>
+                </div>
+         
+               
+
             </div>
             
         )

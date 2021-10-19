@@ -1,4 +1,4 @@
-*{
+/* *{
   box-sizing: border-box;
 }
 
@@ -52,4 +52,33 @@ body ,html,.App,#root,.auth-wrapper{
   margin: 0;
   line-height: 1;
   padding-bottom: 20px;
+} */
+
+.login{
+  margin-top: 10%;
+}
+
+h1{
+  /* font-weight: 800; */
+  font-size: 900px;
+}
+.bg-image{
+  margin-top: 0;
+  height: 100vh;
+  background-size: cover;
+  justify-content: center;
+
+}
+
+.search input[type=text] {
+  float:center;
+
+  padding: 10px;
+  border: none;
+  width: 130%;
+  margin-left: 60px;
+  
+  font-size: 17px;
+  border-radius: 3px;
+
 }

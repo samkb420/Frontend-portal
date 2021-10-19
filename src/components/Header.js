@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+import Search from './Search';
 
 export default class Header extends Component {
 
@@ -27,7 +28,7 @@ export default class Header extends Component {
    
      <a
        class="dropdown-toggle d-flex align-items-center hidden-arrow"
-       href="#/"
+       href="#gg"
        id="navbarDropdownMenuLink"
        role="button"
        data-mdb-toggle="dropdown"
@@ -96,7 +97,7 @@ export default class Header extends Component {
 
 
             <div>
-              <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+              <nav class="navbar navbar-expand-lg navbar-light bg-light ">
  
  <div class="container">
 
@@ -116,7 +117,7 @@ export default class Header extends Component {
    <div class="collapse navbar-collapse" id="navbarSupportedContent">
      
      <a class="navbar-brand mt-2 mt-lg-0" href="#/">
-       Advanced Attachment Portal > Student
+       <h4>Advanced Attachment Portal </h4>
      </a>
     
      {/* <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -130,6 +131,12 @@ export default class Header extends Component {
          <a class="nav-link" href="#">Projects</a>
        </li>
      </ul> */}
+
+
+
+<form class="d-flex search">
+        <Search/>
+      </form>
   
    </div>
 
