@@ -18,7 +18,7 @@ export default class Jobs extends Component {
     }
     receivedData() {
         axios
-            .get(`http://attachmentapi.herokuapp.com/api/v4/jobs`)
+            .get(`https://attachmentapi.herokuapp.com/api/v4/jobs`)
             .then(res => {
 
                 const data = res.data;
