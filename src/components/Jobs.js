@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import axios from 'axios'
 import ReactPaginate from 'react-paginate';
-import './jobs.css'
+// import './jobs.css'
 
 export default class Jobs extends Component {
     constructor(props) {
