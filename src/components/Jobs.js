@@ -18,7 +18,7 @@ export default class Jobs extends Component {
     }
     receivedData() {
         axios
-            .get(`https://proxify-cors.herokuapp.com/proxy?u=http://attachmentapi.herokuapp.com/api/v4/jobs`)
+            .get(`http://attachmentapi.herokuapp.com/api/v4/jobs`)
             .then(res => {
 
                 const data = res.data;
