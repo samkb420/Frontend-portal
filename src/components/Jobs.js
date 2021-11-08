@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import axios from 'axios'
 import ReactPaginate from 'react-paginate';
-// import './jobs.css'
+import './jobs.css'
 
 export default class Jobs extends Component {
     constructor(props) {
@@ -18,11 +18,10 @@ export default class Jobs extends Component {
     }
     receivedData() {
         axios
-            .get(`https://attachmentapi.herokuapp.com/api/v4/jobs`)
+            .get(`http://attachmentapi.herokuapp.com/api/v4/jobs`)
             .then(res => {
 
                 const data = res.data;
-                console.log(data)
                 // const available = {pd.open};
                 const slice = data.slice(this.state.offset, this.state.offset + this.state.perPage)
                 const postData = slice.map(pd => <React.Fragment>
